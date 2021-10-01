@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_to_do/screens/add_task.dart';
 import 'package:flutter_to_do/widgets/tasks_list.dart';
 
 class TasksScreen extends StatelessWidget {
@@ -10,7 +11,7 @@ class TasksScreen extends StatelessWidget {
         onPressed: () {
           showModalBottomSheet(
             context: context,
-            builder: (context) => Container(),
+            builder: (context) => AddTaskScreen(),
           );
         },
         backgroundColor: Colors.lightBlueAccent,
